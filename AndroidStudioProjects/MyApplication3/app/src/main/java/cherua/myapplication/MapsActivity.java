@@ -1,5 +1,6 @@
 package cherua.myapplication;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -14,6 +15,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
 
+    //trying to implement the fab on google maps
+//    private FloatingActionButton go_to_tab_btn;
+//
+//    go_to_tab_btn  = (FloatingActionButton) findViewById(R.id.go_to_tab_btn);
+//    fab.setOnclickListener(new View.OnClickListener(){
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +29,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
 
@@ -38,7 +46,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
+
         LatLng dublin = new LatLng(53.346308,-6.2604618);
         mMap.addMarker(new MarkerOptions().position(dublin).title("The Big Schmoke"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(dublin));
