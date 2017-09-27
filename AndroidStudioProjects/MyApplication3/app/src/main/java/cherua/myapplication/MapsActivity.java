@@ -3,6 +3,7 @@ package cherua.myapplication;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -15,11 +16,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
 
+    //private FloatingActionButton to_tabs_btn = (FloatingActionButton) findViewById(R.id.to_tabs_btn);
+   // to_tabs_btn.setOnClickListener (new View.OnClickListener())
+
     //trying to implement the fab on google maps
-//    private FloatingActionButton go_to_tab_btn;
-//
-//    go_to_tab_btn  = (FloatingActionButton) findViewById(R.id.go_to_tab_btn);
+
+   // private FloatingActionbutton to_tabs_btn;
+   // to_tabs_btn  = (FloatingActionButton) findViewById(R.id.to_tabs_btn);
 //    fab.setOnclickListener(new View.OnClickListener(){
+
+   // public void sButton(View v) {
+      //  Toast.makeText(this, "CLICK!", Toast.LENGTH_SHORT).show();
+   // }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +38,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-    }
+        //just implemented this before leaving the room
+//         FloatingActionButton to_tabs_btn = (FloatingActionButton) findViewById(R.id.to_tabs_btn);
+//         to_tabs_btn.setOnClickListener (new View.OnClickListener() {
+//             @Override
+//             public void onClick(View view) {
+//
+//             }
+//         })
+//
+//    }
 
 
     /**
