@@ -1,5 +1,6 @@
 package cherua.myapplication;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -54,16 +55,22 @@ public class MainTabbedActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab_maps = (FloatingActionButton) findViewById(R.id.fab_maps);
+        fab_maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "This button will send you to Google Maps", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                Intent IntentMaps = new Intent(MainTabbedActivity.this, MapsActivity.class);
+                 startActivity(IntentMaps);
+
             }
         });
 
     }
+
+    
 
 
     @Override
@@ -130,7 +137,7 @@ public class MainTabbedActivity extends AppCompatActivity {
                 case 0:
                     return "New Journey";
                 case 1:
-                    return "Previous Journey";
+                    return "Journey Details";
                 case 2:
                     return "User Profile";
             }

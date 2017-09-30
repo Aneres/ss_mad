@@ -72,6 +72,16 @@
                 android:text="Log In"
                 android:textStyle="bold" />
 
+            <TextView
+                android:text="Not have an account? Register Here"
+                android:id="@+id/textView_Register"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

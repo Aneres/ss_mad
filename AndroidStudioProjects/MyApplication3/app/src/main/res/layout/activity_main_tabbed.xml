@@ -6,7 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="cherua.myapplication.MainTabbedActivity">
+    tools:context="cherua.myapplication.MainTabbedActivity"
+    android:background="@drawable/bicycle"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -39,11 +42,11 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab_maps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+       android:icon="@drawable/ic_action_gotomaps" />
 
 </android.support.design.widget.CoordinatorLayout>

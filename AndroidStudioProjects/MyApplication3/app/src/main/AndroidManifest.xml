@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -41,7 +42,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value= "AIzaSyD4RK4xJe1QziHACTAY3Q66SmDzCHSakIQ" />
 
         <activity
             android:name=".MapsActivity"
@@ -50,6 +51,7 @@
             android:name=".MainTabbedActivity"
             android:label="@string/title_activity_main_tabbed"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+            <activity android:name=".CameraActivity"></activity>
     </application>
 
 </manifest>
