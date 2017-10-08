@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "10287276544",
+    "firebase_url": "https://myapplication3-dfaab.firebaseio.com",
+    "project_id": "myapplication3-dfaab",
+    "storage_bucket": "myapplication3-dfaab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10287276544:android:d64dcb2bc8e50885",
+        "android_client_info": {
+          "package_name": "com.cherua.myapplication.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10287276544-edtbpqnt73ipl6qsnl0103j2opt0jqt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhohg3jUAysuRH8lK4NkJ2mLn9AIxqpHo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10287276544:android:70bc3f0aba8c519a",
+        "android_client_info": {
+          "package_name": "cherua.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10287276544-edtbpqnt73ipl6qsnl0103j2opt0jqt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhohg3jUAysuRH8lK4NkJ2mLn9AIxqpHo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
