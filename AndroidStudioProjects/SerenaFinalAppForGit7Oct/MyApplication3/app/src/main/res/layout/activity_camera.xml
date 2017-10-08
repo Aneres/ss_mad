@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bicycle"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:weightSum="1">>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton_camera"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_weight="0.06"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_action_camera"
+        tools:layout_gravity="center" />
+
+
+</LinearLayout>
